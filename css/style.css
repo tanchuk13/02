@@ -126,9 +126,10 @@ color: #999999
 	padding-bottom: 30%;
 	background-color: #eee;
 	overflow: hidden;
+
 }
 .carousel-items {
-	width: 300%;
+	width: 500%;
 	height: 100%;
 	position: absolute;
 	left: 0;
@@ -141,22 +142,11 @@ color: #999999
 	-webkit-transition: left .5s ease-out;
 }
 .carousel-item {
-	width: 33.33333333%;
+	width: 20%;
 	height: 100%;
 	color: white;
 }
-.carousel-item-blue {
-	background-color: blue;
-}
-.carousel-item-red {
-	background-color: red;
-}
-.carousel-item-green {
-	background-color: green;
-}
-.carousel-item-yellow {
-	background-color: yellow;
-}
+
 
 .carousel-labels {
 	position: absolute;
@@ -175,8 +165,8 @@ color: #999999
 	display: inline-block;
 }
 .carousel-label label {
-	width: 20px;
-	height: 20px;
+	width: 10px;
+	height: 10px;
 	border-radius: 10px;
 	background-color: white;
 	display: block;
@@ -187,7 +177,7 @@ color: #999999
 	left: 0;
 }
 #slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
-	background-color: black;
+	background-image: url("../img/layout/icon-twitter.png");
 }
 #slide2:checked ~ .carousel-items {
 	left: -100%;
