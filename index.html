@@ -4,13 +4,30 @@
 	<title>EUONYMUS</title>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="js/modernizr-custom.js"></script>
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.bxslider').bxSlider({
+		  mode: 'horizontal',
+		  captions: true
+		});
+		
+	});
+</script>
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	
+
 
 </head>
 
 <body>
 
 <div id="header" >
-
+	<a name="top"></a>
 	<div id="topbar">
 		<div class="content_position">
 		<ul>
@@ -36,11 +53,11 @@
 			</div>
 		
 			<div id = "logo">
-			<h1>Euonymos</h1>
-			<p class="slogan">Free PSD<br>Website Template</p>
+				<h1>Euonymos</h1>
+				<p class="slogan">Free PSD<br>Website Template</p>
 			</div>
 
-			<div id="search" >
+			<div class="search" >
 				<input type="search" placeholder="Search Our Website..">
 				<input type ="submit" value="Submit">
 			</div>
@@ -63,10 +80,50 @@
 	
 </div>
 
-<div id ="slider" >
 	<div class="content_position">
+		<ul class="bxslider">
+			<li>
+				
+				<img class ="bxslider_item"src="img/content/slider1.jpg">
+				<div class="overlay">
+					<h2>Polkut gradev nasertyw</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</div>
+			
+			</li>
+			<li>
+				<img class ="bxslider_item" src="img/content/slider2.jpg">
+				<div class="overlay">
+				<h2>Samuy fsdfg roslvd fdsgs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</div>
+			</li>
+			<li>
+				<img class ="bxslider_item" src="img/content/slider3.jpg">
+				<div class="overlay">
+				<h2>Norit norsic lares</h2>
+				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</div>
+			</li>
+			<li>
+				<img class ="bxslider_item" src="img/content/slider4.jpg">
+				<div class="overlay">
+				<h2>SLider finder minor</h2>
+				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</div>
+			</li>
+		
+			<li> 
+					<img class ="bxslider_item" src="img/content/slider5.jpg">
+					<div class="overlay">
+					<h2>Lorem ipsum dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					</div>
+			</li>
+		</ul>
 	
-	<!--**********************************-->
+	
+	<!--*********************************
 	<div class="carousel-wrapper">
 	<input type="radio" checked="checked" id="slide1" class="carousel-selector" name="carousel-selector" />
 	<input type="radio" id="slide2" class="carousel-selector" name="carousel-selector" />
@@ -118,25 +175,7 @@
 		</li>
 	</ul>
 
-	<ul class="carousel-labels">
-		<li class="carousel-label">
-			<label for="slide1"></label>
-		</li>
-		<li class="carousel-label">
-			<label for="slide2"></label>
-		</li>
-		<li class="carousel-label">
-			<label for="slide3"></label>
-		</li>
-		<li class="carousel-label">
-			<label for="slide4"></label>
-		</li>
-		<li class="carousel-label">
-			<label for="slide5"></label>
-		</li>
-	</ul>
-</div>
-	<!--**********************************-->
+	**********************************-->
 	
 	
 		
@@ -279,7 +318,7 @@
 
 <div id="footer" >
 	<div class="content_position">
-	 <div class ="top_arrow"> <img src= "img/layout/top_arrow.png"><p>TOP</p></div>
+	 <div class ="top_arrow"><a href="#top"> <img src= "img/layout/top_arrow.png"><p>TOP</p></a></div>
 	
 	<div id="company" class="footer_column">
 		<h3>Company Details</h3>
