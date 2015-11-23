@@ -23,13 +23,13 @@ border-right: 1px solid black;
 .slogan {
 display: inline-block;
 }
-/*
+
 .content_position {
-width: 1000px;
+max-width: 1000px;
 margin: 0 auto;
 padding: 0 20px;
 }
-*/
+
 #topbar {
 background-color: #2aa2d4;
 min-height: 55px;
@@ -281,7 +281,7 @@ height: 350px;
 	
 	right: 100%;
 	top: 50%;
-	width: 500px;
+	width: 50%;
 	height: 130px;
 	color:white;
 	padding: 20px;
@@ -290,18 +290,30 @@ height: 350px;
 .overlay h2 {
 padding-bottom: 25px;
 }	
+.overlay p {
+height: 65px;
+
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
 #content {
-min-height: 860px;
+min-height: 900px;
+}
+.content::after {
+    content:'';
+    display: table;
+    clear: left;
 }
 
 #intro, #welcome, #work,#team {
 min-height: 150px;
-
+display: inline-block;
 }
+
 .box_title {
 font: 25px  lighter 'Georgia';
-padding: 20px 0  15px 0;
+padding: 0 0  15px 0;
 }
 #intro {
 float: left;
@@ -313,10 +325,10 @@ margin-right: 20px;
 margin-left: 0px;
 }
 
-#welcome h2, #work h2 {
+.content_title {
+border-bottom: 1px solid #e6e6e6;
 margin-bottom: 20px;
 padding-bottom: 15px;
-border-bottom: 1px solid #e6e6e6;
 }
 
 .intro_icon {
@@ -324,6 +336,7 @@ float: left;
 max-height: 48px;
 max-width: 48px;
 overflow: hidden;
+padding-top:15px;
 }
 
 .intro_item {
@@ -351,17 +364,27 @@ width: 225px;
 min-height: 270px;
 margin-right: 20px;
 }
-
-.content_box a:after {
-content: '»';
+.content_box img{
+padding-bottom: 20px;
 }
 
+#team h2{
+display: inline-block;
+width: 225px;
+float: left;
+border: none;
+}
+
+#team a:after, #welcome a:after {
+content: '»';
+}
 
 #footer {
 background-color: #1c1c1c;
 min-height: 468px;
 border-top: 5px solid grey;
 }
+
 #footer_content li:first-child {
 padding-left: 0px;
 }
@@ -426,10 +449,8 @@ padding-right: 8px;
 color: grey;
 }
 
-
-
 .footer_column {
-width: 225px;
+width: 21%;
 min-height: 253px;
 padding-left: 50px;
 float: left;
@@ -439,7 +460,87 @@ color: #666666;
 padding-left: 0;
 }
 
+.input_field, #contact textarea {
+margin-bottom: 10px;
+background-color: grey;
+border: none;
+padding: 5px;
+width: 200px;
+}
+
+#contact textarea {
+height: 100px;
+}
 
 #copyright {
+
 min-height:60px;
 }
+
+
+/* @MEDIA*/
+@media (max-width: 500px)
+{
+.topbar_socio, 
+.topbar_navigation,
+.add a, 
+.search
+{float:none;
+
+}
+.search {
+padding: 20px 0;
+}
+
+.main_navigation {
+display: block;
+text-align: center;
+padding: 5px 0;
+}
+
+#intro {
+padding-bottom: 20px;
+}
+.intro_item
+{margin-left: 0px;
+width: 100%;
+min-height: 60px;
+padding-top:10px;
+}
+.content_box  {
+width: 100%;
+text-align:center;
+}
+#team h2 {
+border-bottom: 1px solid #e6e6e6;
+width: 100%;
+} 
+.content_title
+{text-align: center;}
+
+.footer_column {
+width:100%;
+min-height: 150px;
+padding-left: 0;
+padding-bottom: 10px;
+}
+
+
+.blog_post img {
+margin-right: 10px;
+}
+.blog_descr {
+float: none;
+width:100%;
+
+}
+
+.input_field, #contact textarea {
+width: 100%;
+}
+
+#copywright {
+padding-top: 10px;
+}
+
+} 
