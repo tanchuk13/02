@@ -246,7 +246,7 @@ text-overflow: ellipsis;
 }
 
 #content {
-min-height: 900px;
+min-height: 800px;
 }
 .content::after {
     content:'';
@@ -254,9 +254,10 @@ min-height: 900px;
     clear: left;
 }
 
-#intro, #welcome, #work,#team {
+#intro, #welcome, #work, #team {
 min-height: 150px;
 display: inline-block;
+padding-bottom: 50px;
 }
 
 .box_title {
@@ -432,8 +433,13 @@ resize: vertical;
 }
 
 #copyright {
-
 min-height:60px;
+}
+.copyright_left {
+float: left;
+}
+.copyright_right {
+float: right;
 }
 
 
@@ -491,7 +497,10 @@ padding-left:0px
 .topbar_socio, 
 .topbar_navigation,
 .add a, 
-.search
+.search,
+.copyright_left,
+.copyright_right
+
 {float:none;
 }
 
