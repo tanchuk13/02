@@ -523,11 +523,9 @@ text-align: left;
 .search {
 padding: 20px 0;
 }
-
 #intro {
 padding-bottom: 20px;
 }
-
 .intro_item{
 margin-left: 0px;
 width: 100%;
@@ -538,12 +536,16 @@ padding-top:10px;
 .intro_item p{
 text-align: left;
 }
+
+
 .footer_column {
 width: 45%;
 padding-left:0px
 }
 
 }
+
+
 
 @media (max-width:600px)
 {
