@@ -192,111 +192,30 @@ padding: 0 15px;
 color: #999999
 }
 
-.carousel-items, .carousel-labels {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: block;
-}
-.carousel-item {
-	display: block;
-	float: left;
-}
-
-.carousel-wrapper {
-	width: 960px;
-	height: 350px;
-	position: relative;
-	background-color: #eee;
-	overflow: hidden;
-
-}
-.carousel-items {
-	width: 500%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	transition: left .5s ease-out;
-	-o-transition: left .5s ease-out;
-	-ms-transition: left .5s ease-out;
-	-moz-transition: left .5s ease-out;
-	-webkit-transition: left .5s ease-out;
-}
-.carousel-item {
-	width: 20%;
-	height: 100%;
-	color: white;
-	text-align: center;
-}
-
-
-.carousel-labels {
-	position: absolute;
-	z-index: 2;
-	left: 0;
-	bottom: 0;
-	height: 20px;
-	width: 100%;
-	padding: 10px 0 10px 15px;
-	text-align: left;
-}
-.carousel-selector {
-	display: none;
-}
-.carousel-label {
-	display: inline-block;
-}
-.carousel-label label {
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	background-color: white;
-	display: block;
-	cursor: pointer;
-}
-
-#slide1:checked ~ .carousel-items {
-	left: 0;
-}
-#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
-	background-color: black;
-}
-#slide2:checked ~ .carousel-items {
-	left: -100%;
-}
-#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
-	background-color: black;
-}
-#slide3:checked ~ .carousel-items {
-	left: -200%;
-}
-#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
-	background-color: black;
-}
-
-#slide4:checked ~ .carousel-items {
-	left: -300%;
-}
-#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
-	background-color: black;
-}
-#slide5:checked ~ .carousel-items {
-	left: -400%;
-}
-#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label {
-	background-color: black;
-}
-
 
 #slider{
 	
 	height: 350px;
 	padding-right: 0px;
 }
+
+#work {
+position: relative;
+}
+
+
+  .scrollBlock{height:100px;}
+  .scrollBlock .scrollItem{display:none;}
+  .scrollNavi{
+  text-align:left;
+  position: absolute;
+  top: 0%;
+  left: 85%;
+  width:10%
+  }
+ 
+
+
 
 .bxslider_item 
 {position: relative ;
@@ -537,7 +456,6 @@ width: 100%;
 
 @media (max-width: 768px)
 {
-
 .search, 
 #logo {
 width: 100%;
@@ -549,8 +467,6 @@ text-align: left;
 .search {
 padding: 20px 0;
 }
-
-
 #intro {
 padding-bottom: 20px;
 }
@@ -562,10 +478,9 @@ padding-top:10px;
 }
 
 .footer_column {
-
 width: 45%;
-
-padding-left:0px}
+padding-left:0px
+}
 
 }
 
@@ -579,6 +494,7 @@ padding-left:0px}
 .search
 {float:none;
 }
+
 #topbar {
 text-align: center;
 }
@@ -590,9 +506,8 @@ text-align:center;
 .slogan {
 text-align: left;
 }
-.search {
-padding: 20px 0;
-}
+.search 
+{padding: 20px 0;}
 
 .main_navigation {
 display: block;
@@ -618,14 +533,12 @@ padding-left: 0;
 padding-bottom: 10px;
 }
 
-
 .blog_post img {
 margin-right: 10px;
 }
 .blog_descr {
 float: none;
 width:100%;
-
 }
 
 .input_field, #contact textarea {
